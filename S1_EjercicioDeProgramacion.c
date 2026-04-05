@@ -90,6 +90,7 @@ int main(){
             break;
         case 4: 
             printf("\n|-----Ganancias Acumuladas-----|\n");
+            printf("Total de ganancias: $%.2f\n", ganancias);
             break;
         case 5: 
             printf("\nAdios...\n");
