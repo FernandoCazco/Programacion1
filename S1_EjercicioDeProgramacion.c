@@ -36,6 +36,32 @@ int main(){
         printf("-------------------------------\n");
         printf("Seleccione una opcion\n");
         scanf("%d", &opcion);
+
+        switch (opcion)
+        {
+        case 1: 
+            printf("\n|-----Vender Producto-----|\n");
+            break;
+        case 2: 
+            printf("\n|-----Reabastecer El Stock-----|\n");
+            break;
+        case 3: 
+            printf("\n|-----Informacion del Producto-----|\n");
+            break;
+        case 4: 
+            printf("\n|-----Ganancias Acumuladas-----|\n");
+            break;
+        case 5: 
+            printf("\nAdios...\n");
+            break;
+
+        default:
+            printf("Opcion no valida.\n");
+            printf("Selecione una opcion valida\n");
+            break;
+        }
+
+
     }while (opcion !=5);
 
     return 0;
