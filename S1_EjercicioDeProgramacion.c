@@ -3,6 +3,7 @@
 
 int main(){
     
+    int opcion;
     int id;
     char nombre[50];
     int stock;
@@ -24,5 +25,18 @@ int main(){
 
     printf("Ingrese el precio unitario en dolares:");
     scanf("%f" , &precio);
+
+    do{
+        printf("\n|-----Menu del producto-----|\n");
+        printf("1) Vender producto\n");
+        printf("2) Reabastecer el stock\n");
+        printf("3) Informacion del producto\n");
+        printf("4) Ganacias acumuladas\n");
+        printf("5) Salir\n");
+        printf("-------------------------------\n");
+        printf("Seleccione una opcion\n");
+        scanf("%d", &opcion);
+    }while (opcion !=5);
+
     return 0;
 }
