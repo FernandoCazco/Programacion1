@@ -82,6 +82,11 @@ int main(){
             break;
         case 3: 
             printf("\n|-----Informacion del Producto-----|\n");
+            printf("ID: %d\n",  id);
+            printf("Nombre: %s\n", nombre);
+            printf("Stock: %d\n", stock);
+            printf("Precio por unidad: $%.2f\n", precio);
+            printf("Ganancia: $%2.f\n", ganancias);
             break;
         case 4: 
             printf("\n|-----Ganancias Acumuladas-----|\n");
