@@ -3,6 +3,7 @@
 
 int main(){
     
+    int agregar;
     int cantVender;
     int opcion;
     int id;
@@ -70,6 +71,14 @@ int main(){
             break;
         case 2: 
             printf("\n|-----Reabastecer El Stock-----|\n");
+            printf("Unidades a agregar: ");
+            scanf("%d", &agregar);
+            if (agregar <= 0){
+                printf("cantidad invalida.\n");
+                break;
+            }
+            stock += agregar;
+            printf("Stock actualizado:%d .\n",stock);
             break;
         case 3: 
             printf("\n|-----Informacion del Producto-----|\n");
