@@ -7,7 +7,7 @@ int main(){
     int cantVender;
     int opcion;
     int id;
-    char nombre[50];
+    char nombre[100];
     int stock;
     float precio;
     float ganancias = 0.0f;
