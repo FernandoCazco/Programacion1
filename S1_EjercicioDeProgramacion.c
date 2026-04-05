@@ -4,7 +4,7 @@
 int main(){
     
     int id;
-    char nombre;
+    char nombre[50];
     int stock;
     float precio;
     float ganancias = 0.0f;
@@ -12,10 +12,12 @@ int main(){
     printf("\n|----- Registro de Tienda -----|\n");
 
     printf("Ingrese el ID del producto:");
-    scanf("&d", &id);
+    scanf("%d", &id);
 
     printf("Ingrese el nombre del producto:");
-    scanf(" %[^\n]", nombre);
+    scanf(" ");
+    fgets(nombre, sizeof(nombre), stdin);
+    nombre[strcspn(nombre, "\n")] = '\0';
 
     printf("Ingrese la cantidad en stock:");
     scanf("%d", &stock);
