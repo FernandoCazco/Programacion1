@@ -93,6 +93,12 @@ int main(){
             printf("Total de ganancias: $%.2f\n", ganancias);
             break;
         case 5: 
+            printf("\n|-----Resumen Final-----|\n");
+            printf("ID: %d\n",  id);
+            printf("Nombre: %s\n", nombre);
+            printf("Stock final: %d\n", stock);
+            printf("Precio por unidad: $%.2f\n", precio);
+            printf("Ganancia: $%2.f\n", ganancias);
             printf("\nAdios...\n");
             break;
 
